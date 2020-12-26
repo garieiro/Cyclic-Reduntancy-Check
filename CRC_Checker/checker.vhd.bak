@@ -1,0 +1,16 @@
+--Gonçalo Arieiro nº80130
+--João Abrantes nº79987
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity checker is
+	port(dIn_0, dIn_1, dIn_2, dIn_3				: in std_logic;	--msg
+			dIn_4, dIn_5, dIn_6, dIn_7				: in std_logic;	--msg
+			dIn_8, dIn_9, dIn_10, dIn_11			: in std_logic;	--msg
+			dIn_12, dIn_13, dIn_14, dIn_15		: in std_logic;	--msg
+			
+			dOut_0, dOut_1, dOut_2, dOut_3		: out std_logic;	--segundo resto
+			dOut_4,dOut_5,dOut_6,dOut_7 			: out std_logic	--segundo resto
+		);
+end checker;

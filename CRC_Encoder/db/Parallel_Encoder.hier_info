@@ -1,0 +1,295 @@
+|Encoder
+dIn_0 => xor2_1:xor4.dataIn[0]
+dIn_0 => xor2_1:xor7.dataIn[0]
+dIn_0 => dOut_8.DATAIN
+dIn_1 => xor2_1:xor2.dataIn[0]
+dIn_1 => xor2_1:xor9.dataIn[0]
+dIn_1 => dOut_9.DATAIN
+dIn_2 => xor2_1:xor1.dataIn[0]
+dIn_2 => xor2_1:xor4.dataIn[1]
+dIn_2 => dOut_10.DATAIN
+dIn_3 => xor2_1:xor2.dataIn[1]
+dIn_3 => xor2_1:xor8.dataIn[0]
+dIn_3 => dOut_11.DATAIN
+dIn_4 => xor2_1:xor3.dataIn[0]
+dIn_4 => xor2_1:xor33.dataIn[1]
+dIn_4 => dOut_12.DATAIN
+dIn_5 => xor2_1:xor5.dataIn[0]
+dIn_5 => xor2_1:xor32.dataIn[1]
+dIn_5 => dOut_13.DATAIN
+dIn_6 => xor2_1:xor3.dataIn[1]
+dIn_6 => xor2_1:xor23.dataIn[1]
+dIn_6 => dOut_14.DATAIN
+dIn_7 => xor2_1:xor5.dataIn[1]
+dIn_7 => xor2_1:xor13.dataIn[1]
+dIn_7 => dOut_15.DATAIN
+dIn_8 => xor2_1:xor6.dataIn[0]
+dIn_8 => xor2_1:xor14.dataIn[1]
+dIn_8 => dOut_16.DATAIN
+dIn_9 => xor2_1:xor0.dataIn[0]
+dIn_9 => xor2_1:xor6.dataIn[1]
+dIn_9 => dOut_17.DATAIN
+dIn_10 => xor2_1:xor1.dataIn[1]
+dIn_10 => xor2_1:xor8.dataIn[1]
+dIn_10 => dOut_18.DATAIN
+dIn_11 => xor2_1:xor10.dataIn[0]
+dIn_11 => xor2_1:xor29.dataIn[1]
+dIn_11 => dOut_19.DATAIN
+dIn_12 => xor2_1:xor10.dataIn[1]
+dIn_12 => xor2_1:xor31.dataIn[1]
+dIn_12 => dOut_20.DATAIN
+dIn_13 => xor2_1:xor9.dataIn[1]
+dIn_13 => xor2_1:xor35.dataIn[1]
+dIn_13 => dOut_21.DATAIN
+dIn_14 => xor2_1:xor0.dataIn[1]
+dIn_14 => dOut_22.DATAIN
+dIn_15 => xor2_1:xor7.dataIn[1]
+dIn_15 => dOut_23.DATAIN
+dOut_0 << xor2_1:xor36.dataOut
+dOut_1 << xor2_1:xor35.dataOut
+dOut_2 << xor2_1:xor34.dataOut
+dOut_3 << xor2_1:xor33.dataOut
+dOut_4 << xor2_1:xor32.dataOut
+dOut_5 << xor2_1:xor31.dataOut
+dOut_6 << xor2_1:xor30.dataOut
+dOut_7 << xor2_1:xor29.dataOut
+dOut_8 << dIn_0.DB_MAX_OUTPUT_PORT_TYPE
+dOut_9 << dIn_1.DB_MAX_OUTPUT_PORT_TYPE
+dOut_10 << dIn_2.DB_MAX_OUTPUT_PORT_TYPE
+dOut_11 << dIn_3.DB_MAX_OUTPUT_PORT_TYPE
+dOut_12 << dIn_4.DB_MAX_OUTPUT_PORT_TYPE
+dOut_13 << dIn_5.DB_MAX_OUTPUT_PORT_TYPE
+dOut_14 << dIn_6.DB_MAX_OUTPUT_PORT_TYPE
+dOut_15 << dIn_7.DB_MAX_OUTPUT_PORT_TYPE
+dOut_16 << dIn_8.DB_MAX_OUTPUT_PORT_TYPE
+dOut_17 << dIn_9.DB_MAX_OUTPUT_PORT_TYPE
+dOut_18 << dIn_10.DB_MAX_OUTPUT_PORT_TYPE
+dOut_19 << dIn_11.DB_MAX_OUTPUT_PORT_TYPE
+dOut_20 << dIn_12.DB_MAX_OUTPUT_PORT_TYPE
+dOut_21 << dIn_13.DB_MAX_OUTPUT_PORT_TYPE
+dOut_22 << dIn_14.DB_MAX_OUTPUT_PORT_TYPE
+dOut_23 << dIn_15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|XOR2_1:xor0
+dataIn[0] => dataOut.IN0
+dataIn[1] => dataOut.IN1
+dataOut <= dataOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|XOR2_1:xor1
+dataIn[0] => dataOut.IN0
+dataIn[1] => dataOut.IN1
+dataOut <= dataOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|XOR2_1:xor2
+dataIn[0] => dataOut.IN0
+dataIn[1] => dataOut.IN1
+dataOut <= dataOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|XOR2_1:xor3
+dataIn[0] => dataOut.IN0
+dataIn[1] => dataOut.IN1
+dataOut <= dataOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|XOR2_1:xor4
+dataIn[0] => dataOut.IN0
+dataIn[1] => dataOut.IN1
+dataOut <= dataOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|XOR2_1:xor5
+dataIn[0] => dataOut.IN0
+dataIn[1] => dataOut.IN1
+dataOut <= dataOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|XOR2_1:xor6
+dataIn[0] => dataOut.IN0
+dataIn[1] => dataOut.IN1
+dataOut <= dataOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|XOR2_1:xor7
+dataIn[0] => dataOut.IN0
+dataIn[1] => dataOut.IN1
+dataOut <= dataOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|XOR2_1:xor8
+dataIn[0] => dataOut.IN0
+dataIn[1] => dataOut.IN1
+dataOut <= dataOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|XOR2_1:xor9
+dataIn[0] => dataOut.IN0
+dataIn[1] => dataOut.IN1
+dataOut <= dataOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|XOR2_1:xor10
+dataIn[0] => dataOut.IN0
+dataIn[1] => dataOut.IN1
+dataOut <= dataOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|XOR2_1:xor11
+dataIn[0] => dataOut.IN0
+dataIn[1] => dataOut.IN1
+dataOut <= dataOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|XOR2_1:xor12
+dataIn[0] => dataOut.IN0
+dataIn[1] => dataOut.IN1
+dataOut <= dataOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|XOR2_1:xor13
+dataIn[0] => dataOut.IN0
+dataIn[1] => dataOut.IN1
+dataOut <= dataOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|XOR2_1:xor14
+dataIn[0] => dataOut.IN0
+dataIn[1] => dataOut.IN1
+dataOut <= dataOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|XOR2_1:xor15
+dataIn[0] => dataOut.IN0
+dataIn[1] => dataOut.IN1
+dataOut <= dataOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|XOR2_1:xor16
+dataIn[0] => dataOut.IN0
+dataIn[1] => dataOut.IN1
+dataOut <= dataOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|XOR2_1:xor17
+dataIn[0] => dataOut.IN0
+dataIn[1] => dataOut.IN1
+dataOut <= dataOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|XOR2_1:xor18
+dataIn[0] => dataOut.IN0
+dataIn[1] => dataOut.IN1
+dataOut <= dataOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|XOR2_1:xor19
+dataIn[0] => dataOut.IN0
+dataIn[1] => dataOut.IN1
+dataOut <= dataOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|XOR2_1:xor20
+dataIn[0] => dataOut.IN0
+dataIn[1] => dataOut.IN1
+dataOut <= dataOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|XOR2_1:xor21
+dataIn[0] => dataOut.IN0
+dataIn[1] => dataOut.IN1
+dataOut <= dataOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|XOR2_1:xor22
+dataIn[0] => dataOut.IN0
+dataIn[1] => dataOut.IN1
+dataOut <= dataOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|XOR2_1:xor23
+dataIn[0] => dataOut.IN0
+dataIn[1] => dataOut.IN1
+dataOut <= dataOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|XOR2_1:xor24
+dataIn[0] => dataOut.IN0
+dataIn[1] => dataOut.IN1
+dataOut <= dataOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|XOR2_1:xor25
+dataIn[0] => dataOut.IN0
+dataIn[1] => dataOut.IN1
+dataOut <= dataOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|XOR2_1:xor26
+dataIn[0] => dataOut.IN0
+dataIn[1] => dataOut.IN1
+dataOut <= dataOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|XOR2_1:xor27
+dataIn[0] => dataOut.IN0
+dataIn[1] => dataOut.IN1
+dataOut <= dataOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|XOR2_1:xor28
+dataIn[0] => dataOut.IN0
+dataIn[1] => dataOut.IN1
+dataOut <= dataOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|XOR2_1:xor29
+dataIn[0] => dataOut.IN0
+dataIn[1] => dataOut.IN1
+dataOut <= dataOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|XOR2_1:xor30
+dataIn[0] => dataOut.IN0
+dataIn[1] => dataOut.IN1
+dataOut <= dataOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|XOR2_1:xor31
+dataIn[0] => dataOut.IN0
+dataIn[1] => dataOut.IN1
+dataOut <= dataOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|XOR2_1:xor32
+dataIn[0] => dataOut.IN0
+dataIn[1] => dataOut.IN1
+dataOut <= dataOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|XOR2_1:xor33
+dataIn[0] => dataOut.IN0
+dataIn[1] => dataOut.IN1
+dataOut <= dataOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|XOR2_1:xor34
+dataIn[0] => dataOut.IN0
+dataIn[1] => dataOut.IN1
+dataOut <= dataOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|XOR2_1:xor35
+dataIn[0] => dataOut.IN0
+dataIn[1] => dataOut.IN1
+dataOut <= dataOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|XOR2_1:xor36
+dataIn[0] => dataOut.IN0
+dataIn[1] => dataOut.IN1
+dataOut <= dataOut.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,75 @@
+--Gonçalo Arieiro nº80130
+--João Abrantes
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity Encoder is
+	port(dIn_8, dIn_9, dIn_10, dIn_11			: in std_logic;	--msg
+			dIn_12, dIn_13, dIn_14, dIn_15		: in std_logic;	--msg
+			dIn_16, dIn_17, dIn_18, dIn_19		: in std_logic;	--msg
+			dIn_20, dIn_21, dIn_22, dIn_23		: in std_logic;	--msg
+			dOut_0, dOut_1, dOut_2, dOut_3		: out std_logic;	--resto
+			dOut_4,dOut_5,dOut_6,dOut_7 			: out std_logic	--resto
+		);
+end Encoder;
+
+
+architecture Struct of Encoder is
+	signal s_xor0 , s_xor1, s_xor2, s_xor3: std_logic;
+	begin
+	
+		xor0 : entity work.XOR2_1(Behav)
+					port map(dataIn(0) => dataIn(3),	--m1
+								dataIn(1) => dataIn(2),	--m2
+								dataOut => s_xor0
+					);
+					
+		xor1 : entity work.XOR2_1(Behav)
+					port map(dataIn(0) => dataIn(1),	--m3
+								dataIn(1) => dataIn(0),	--m4
+								dataOut => s_xor1
+					);
+				
+		dataOut(7) <= dataIn(0);	--x0
+		
+		xor2 :entity work.XOR2_1(Behav)
+					port map(dataIn(0) => dataIn(0),
+								dataIn(1) => dataIn(3),
+								dataOut => dataOut(6)	--x1
+					);
+					
+		xor3 :entity work.XOR2_1(Behav)
+					port map(dataIn(0) => dataIn(0),
+								dataIn(1) => dataIn(2),
+								dataOut => s_xor3
+					);
+		
+		dataOut(5) <= s_xor3;	--x2
+					
+		xor4:	entity work.XOR2_1(Behav)
+					port map(dataIn(0) => s_xor3, 
+								dataIn(1) => dataIn(3),
+								dataOut => dataOut(4)	--x3
+							);
+							
+		dataOut(3) <= s_xor1;	--x4
+		
+		xor5: entity work.XOR2_1(Behav)
+					port map(dataIn(0) => s_xor1, 
+								dataIn(1) => dataIn(3),
+								dataOut => dataOut(2)	--x5
+					);
+		
+		xor6 : entity work.XOR2_1(Behav)
+					port map(dataIn(0) => s_xor1,
+								dataIn(1) => dataIn(2),
+								dataOut => dataOut(1)	--x6
+					);
+					
+		xor7 :entity work.XOR2_1(Behav)
+					port map(dataIn(0) => s_xor0,
+								dataIn(1) => s_xor1,
+								dataOut => dataOut(0)	--x7
+					);
+end Struct;
